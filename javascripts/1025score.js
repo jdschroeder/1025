@@ -16,4 +16,9 @@ jQuery(document).ready(function() {
         $("label[for=" + $(this).attr("id") + "] i").toggleClass("fa-square-o").toggleClass("fa-check-square-o");
         sumTotalScore(); // Re-sum total score after a row has changed
     });
+    $("button#reset").on("click", function() {
+        $("input[type=checkbox]:checked").removeAttr("checked").siblings("label").find("i").toggleClass("fa-square-o").toggleClass("fa-check-square-o");
+        $(".rowscore").html(0);
+        $("#totalscore").html(0);
+    });
 }, $);
