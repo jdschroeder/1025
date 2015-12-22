@@ -13,6 +13,7 @@ jQuery(document).ready(function() {
     }
     $("input[type=checkbox]").on("change", function() {
         calculateRowScore($(this).attr('data-distance')); // Calculate scores a row at a time for efficiency
+        $("label[for=" + $(this).attr("id") + "] i").toggleClass("fa-square-o").toggleClass("fa-check-square-o");
         sumTotalScore(); // Re-sum total score after a row has changed
     });
 }, $);

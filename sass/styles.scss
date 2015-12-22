@@ -1,8 +1,42 @@
 // Import Bootstrap Compass integration
-@import "bootstrap-compass";
+//@import "bootstrap-compass";
 
 // Import custom Bootstrap variables
-@import "bootstrap-variables";
+//@import "bootstrap-variables";
 
 // Import Bootstrap for Sass
-@import "bootstrap";
+//@import "bootstrap";
+
+input[type=checkbox] {
+    display: none;
+}
+
+.grid {
+    font-size: 1.25em;
+}
+
+.grid-distance,
+.grid-checkbox,
+.grid-score {
+    float: left;
+    padding: 1%;
+}
+
+.grid-distance {
+    clear: left;
+    width: 8%;
+}
+
+.grid-checkbox {
+    width: 11%;
+}
+
+.grid-score {
+    clear: right;
+    text-align: right;
+    width: 10%;
+}
+
+label .fa {
+    font-size: 2.5rem;
+}

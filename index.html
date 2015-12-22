@@ -2,78 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>1025 Disc Golf</title>
     <link href="stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="javascripts/1025score.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>1025</h1>
-        <div id="totalscore">0</div>
-        
+    <div id="totalscore">0</div>
+    
+    <div class="grid">
         <div class="row 10foot">
-            <div class="col-xs-2">10'</div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="10" data-points="15" name="10_1"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="10" data-points="10" name="10_2"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="10" data-points="10" name="10_3"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="10" data-points="10" name="10_4"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="10" data-points="10" name="10_5"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="10" data-points="15" name="10_6"></div>
-            <div class="col-xs-4"><div class="rowscore" data-distance="10" id="score_10">0</div></div>
+            <div class="grid-distance">10'</div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="10" data-points="15" name="10_1" id="10_1"><label for="10_1"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="10" data-points="10" name="10_2" id="10_2"><label for="10_2"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="10" data-points="10" name="10_3" id="10_3"><label for="10_3"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="10" data-points="10" name="10_4" id="10_4"><label for="10_4"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="10" data-points="10" name="10_5" id="10_5"><label for="10_5"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="10" data-points="15" name="10_6" id="10_6"><label for="10_6"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-score"><div class="rowscore" data-distance="10" id="score_10">0</div></div>
         </div>
+    
         <div class="row 15foot">
-            <div class="col-xs-2">15'</div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="15" data-points="20" name="15_1"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="15" data-points="15" name="15_2"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="15" data-points="15" name="15_3"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="15" data-points="15" name="15_4"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="15" data-points="15" name="15_5"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="15" data-points="20" name="15_6"></div>
-            <div class="col-xs-4"><div class="rowscore" data-distance="15" id="score_15">0</div></div>
+            <div class="grid-distance">15'</div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="15" data-points="20" name="15_1" id="15_1"><label for="15_1"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="15" data-points="15" name="15_2" id="15_2"><label for="15_2"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="15" data-points="15" name="15_3" id="15_3"><label for="15_3"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="15" data-points="15" name="15_4" id="15_4"><label for="15_4"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="15" data-points="15" name="15_5" id="15_5"><label for="15_5"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="15" data-points="20" name="15_6" id="15_6"><label for="15_6"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-score"><div class="rowscore" data-distance="15" id="score_15">0</div></div>
         </div>
+    
         <div class="row 20foot">
-            <div class="col-xs-2">20'</div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="20" data-points="25" name="20_1"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="20" data-points="20" name="20_2"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="20" data-points="20" name="20_3"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="20" data-points="20" name="20_4"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="20" data-points="20" name="20_5"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="20" data-points="25" name="20_6"></div>
-            <div class="col-xs-4"><div class="rowscore" data-distance="20" id="score_20">0</div></div>
+            <div class="grid-distance">20'</div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="20" data-points="25" name="20_1" id="20_1"><label for="20_1"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="20" data-points="20" name="20_2" id="20_2"><label for="20_2"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="20" data-points="20" name="20_3" id="20_3"><label for="20_3"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="20" data-points="20" name="20_4" id="20_4"><label for="20_4"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="20" data-points="20" name="20_5" id="20_5"><label for="20_5"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="20" data-points="25" name="20_6" id="20_6"><label for="20_6"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-score"><div class="rowscore" data-distance="20" id="score_20">0</div></div>
         </div>
+    
         <div class="row 25foot">
-            <div class="col-xs-2">25'</div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="25" data-points="30" name="25_1"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="25" data-points="25" name="25_2"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="25" data-points="25" name="25_3"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="25" data-points="25" name="25_4"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="25" data-points="25" name="25_5"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="25" data-points="30" name="25_6"></div>
-            <div class="col-xs-4"><div class="rowscore" data-distance="25" id="score_25">0</div></div>
+            <div class="grid-distance">25'</div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="25" data-points="30" name="25_1" id="25_1"><label for="25_1"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="25" data-points="25" name="25_2" id="25_2"><label for="25_2"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="25" data-points="25" name="25_3" id="25_3"><label for="25_3"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="25" data-points="25" name="25_4" id="25_4"><label for="25_4"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="25" data-points="25" name="25_5" id="25_5"><label for="25_5"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="25" data-points="30" name="25_6" id="25_6"><label for="25_6"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-score"><div class="rowscore" data-distance="25" id="score_25">0</div></div>
         </div>
+    
         <div class="row 30foot">
-            <div class="col-xs-2">30'</div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="30" data-points="40" name="30_1"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="30" data-points="30" name="30_2"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="30" data-points="30" name="30_3"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="30" data-points="30" name="30_4"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="30" data-points="30" name="30_5"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="30" data-points="40" name="30_6"></div>
-            <div class="col-xs-4"><div class="rowscore" data-distance="30" id="score_30">0</div></div>
+            <div class="grid-distance">30'</div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="30" data-points="40" name="30_1" id="30_1"><label for="30_1"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="30" data-points="30" name="30_2" id="30_2"><label for="30_2"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="30" data-points="30" name="30_3" id="30_3"><label for="30_3"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="30" data-points="30" name="30_4" id="30_4"><label for="30_4"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="30" data-points="30" name="30_5" id="30_5"><label for="30_5"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="30" data-points="40" name="30_6" id="30_6"><label for="30_6"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-score"><div class="rowscore" data-distance="30" id="score_30">0</div></div>
         </div>
+    
         <div class="row 35foot">
-            <div class="col-xs-2">35'</div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="35" data-points="45" name="35_1"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="35" data-points="35" name="35_2"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="35" data-points="35" name="35_3"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="35" data-points="35" name="35_4"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="35" data-points="35" name="35_5"></div>
-            <div class="col-xs-1"><input type="checkbox" data-distance="35" data-points="45" name="35_6"></div>
-            <div class="col-xs-4"><div class="rowscore" data-distance="35" id="score_35">0</div></div>
+            <div class="grid-distance">35'</div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="35" data-points="45" name="35_1" id="35_1"><label for="35_1"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="35" data-points="35" name="35_2" id="35_2"><label for="35_2"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="35" data-points="35" name="35_3" id="35_3"><label for="35_3"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="35" data-points="35" name="35_4" id="35_4"><label for="35_4"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="35" data-points="35" name="35_5" id="35_5"><label for="35_5"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-checkbox"><input type="checkbox" data-distance="35" data-points="45" name="35_6" id="35_6"><label for="35_6"><i class="fa fa-square-o"></i></label></div>
+            <div class="grid-score"><div class="rowscore" data-distance="35" id="score_35">0</div></div>
         </div>
     </div>
+
 </body>
 
 
